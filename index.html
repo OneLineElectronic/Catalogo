@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Catalogo OneLine</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="pricing.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check" viewBox="0 0 16 16">
+    <title>Check</title>
+    <!-- <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/> -->
+     </symbol>
+</svg>
+
+    <div class="container py-3">
+        <header>
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
+                    <img src="img/OneLine.png" alt="One Line Logo" width=" 150 ">
+                    <span class="fs-4 ">One Line Electronics</span>
+                </a>
+
+
+            </div>
+
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center ">
+                <h1 class="display-4 fw-normal ">Catalogo</h1>
+                <p class="fs-5 text-muted ">A continuacion un pequeño catalogo de nuestros productos</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center ">
+
+                <!-- primero -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <img src="img/ECG.png" alt="Electro Cardiograma" width="200">
+                            <h1 class="card-title pricing-card-title ">$20</h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>Modulo de Electrocardiograma</li>
+                                <li>AD8232</li>
+                                <li>Voltage de alimentacion: 3.3V 5V</li>
+                                <li>Compatible con Arduino</li>
+                            </ul>
+                            <a target="_blank" href="https://github.com/sparkfun/AD8232_Heart_Rate_Monitor">
+                                <button type="button " class="w-100 btn btn-lg btn-primary ">Mas Info</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin de primero -->
+                <!-- inicio de segundo -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <img src="img/GARRA.png" width="182" alt="Brazo">
+                            <h1 class="card-title pricing-card-title ">$25</h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>Brazo robotico de acrilico</li>
+                                <li>Incluye 4 servos</li>
+                                <li>Arduino Uno</li>
+                                <li>Shield Joystick</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin de Segundo -->
+                <!-- Inicio de Tercero -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <img src="img/ESP32.png" width="200" alt="ESP32">
+                            <h1 class="card-title pricing-card-title ">$10</h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>NodeMcu ESP32</li>
+                                <li>Bluethooth</li>
+                                <li>Wi-Fi</li>
+                                <li>Voltage de alimentacion: 3.3V 5V</li>
+                            </ul>
+                            <a href="https://github.com/espressif/arduino-esp32" target="_blank" rel="Mas info ESP32">
+                                <button type="button " class="w-100 btn btn-lg btn-primary ">Mas Info</button> </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin de tercero -->
+                <!-- Inico Cuarto-->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <img src="img/LCD_BLUE.png" width="200" alt="LCD 16x2">
+                            <h1 class="card-title pricing-card-title ">$10</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>Modulo LCD 16x2 </li>
+                                <li>Modulo i2c integrado</li>
+                                <li>Fondo azul letras blancas</li>
+                            </ul>
+                            <a href="https://wiki.dfrobot.com/I2C_TWI_LCD1602_Module__Gadgeteer_Compatible___SKU__DFR0063_" target="_blank" rel="info LCD">
+                                <button type="button " class="w-100 btn btn-lg btn-primary ">Mas Info</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fn Cuarto-->
+                <!-- Inicio Quinto -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <h1 class="card-title pricing-card-title ">$29<small class="text-muted fw-light ">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button " class="w-100 btn btn-lg btn-primary ">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Quinto -->
+                <!-- Inicio Sexto -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <h1 class="card-title pricing-card-title ">$29<small class="text-muted fw-light ">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button " class="w-100 btn btn-lg btn-primary ">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Sexto -->
+                <!-- Inicio Septimo -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <h1 class="card-title pricing-card-title ">$29<small class="text-muted fw-light ">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button " class="w-100 btn btn-lg btn-primary ">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Septimo -->
+                <!-- Inicio Octavo -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <h1 class="card-title pricing-card-title ">$29<small class="text-muted fw-light ">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button " class="w-100 btn btn-lg btn-primary ">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Octavo -->
+                <!-- Inicio Noveno -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <h1 class="card-title pricing-card-title ">$29<small class="text-muted fw-light ">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button " class="w-100 btn btn-lg btn-primary ">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Noveno -->
+                <!-- Inicio Decimo -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <h1 class="card-title pricing-card-title ">$29<small class="text-muted fw-light ">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button " class="w-100 btn btn-lg btn-primary ">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Decimo -->
+                <!-- inicio Decimo Primero -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <h1 class="card-title pricing-card-title ">$29<small class="text-muted fw-light ">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button " class="w-100 btn btn-lg btn-primary ">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Decimo Primero -->
+                <!-- Inicio Decimo Segundo -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <h1 class="card-title pricing-card-title ">$29<small class="text-muted fw-light ">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button " class="w-100 btn btn-lg btn-primary ">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Decimo Segundo -->
+            </div>
+
+
+
+
+
+        </main>
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top ">
+            <div class="row ">
+                <div class="col-12 col-md ">
+                    <img class="mb-2 " src="../assets/brand/bootstrap-logo.svg " alt=" " width="24 " height="19 ">
+                    <small class="d-block mb-3 text-muted ">&copy; 2017–2021</small>
+                </div>
+                <div class="col-12 col-md ">
+                    <img class="mb-2 " src="../assets/brand/bootstrap-logo.svg " alt=" " width="24 " height="19 ">
+                    <small class="d-block mb-3 text-muted ">&copy; 2017–2021</small>
+
+                </div>
+                <div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+                <div> Diseñado a partir de plantilla de "Mark Otto, Jacob Thornton y Bootstrap contributors" </div>
+
+
+
+            </div>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
