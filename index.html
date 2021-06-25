@@ -12,7 +12,9 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -43,6 +45,16 @@
             right: 20px;
             display: none;
         }
+        
+        .fs-4 {
+            font-size: calc(2.6rem + .3vw)!important;
+            font-family: 'Benne', serif;
+            color: #0248ba;
+        }
+        
+        .fw-normal {
+            font-family: 'Benne', serif;
+        }
     </style>
 
 
@@ -63,8 +75,8 @@
         <header>
             <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
                 <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
-                    <img src="img/OneLine.png" alt="One Line Logo" width=" 150 ">
-                    <span class="fs-4 ">One Line Electronics</span>
+                    <img src="img/OneLineLogo.svg" alt="One Line Logo" width=" 150 ">
+                    <span class="fs-4 "> One Line Electronics</span>
                 </a>
             </div>
 
@@ -78,7 +90,64 @@
         <main>
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center ">
 
-                <!-- primero -->
+                <!-- Fin LDR-->
+                <!-- Inicio LED ultrabrillo -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <img src="img/LEDutrabrillo.png" width="235" alt="LED ultrabrillo Azul, Amarillo, Verde, Rojo, Blanco">
+                            <h1 class="card-title pricing-card-title ">$0.20<small class="text-muted fw-light ">c/u</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li class="titulo">LED ultrabrillo</li>
+                                <li>5mm</li>
+                                <li>Azul, Amarillo</li>
+                                <li>Verde, Rojo, Blanco</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Led UtraBrillo-->
+                <!-- Inicio LED ultrabrillo -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <img src="img/RGB.png" width="215" alt="LED RGB">
+                            <h1 class="card-title pricing-card-title ">$0.50<small class="text-muted fw-light ">c/u</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li class="titulo">LED ultrabrillo RGB</li>
+                                <li>5mm</li>
+                                <li>Catodo comun</li>
+                                <li>Azul, Verde, Rojo,</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Led UtraBrillo-->
+                <!-- Inicio LED_SMD-->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <img src="img/LED_SMD.png" width="225" alt="LED_SMD">
+                            <h1 class="card-title pricing-card-title ">$29<small class="text-muted fw-light ">c/u</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li class="titulo">Led SMD 1206</li>
+                                <li>Rojo</li>
+                                <li> Azul, Amarillo </li>
+                                <li>Blanco, Verde </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin LED_SMD-->
+                <!-- Inicio ECG -->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
                         <div class="card-header py-3 text-white bg-primary border-primary ">
@@ -98,8 +167,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Fin de primero -->
-                <!-- inicio de segundo -->
+                <!-- Fin ECG -->
+                <!-- inicio Garra -->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
                         <div class="card-header py-3 text-white bg-primary border-primary ">
@@ -118,27 +187,48 @@
                         </div>
                     </div>
                 </div>
-                <!-- Fin de Segundo -->
-                <!-- Inicio de Tercero -->
+                <!-- Fin Garra -->
+                <!-- Inicio Carro-->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
                         <div class="card-header py-3 text-white bg-primary border-primary ">
                         </div>
                         <div class="card-body ">
-                            <img src="img/ESP32.png" width="210" alt="ESP32">
-                            <h1 class="card-title pricing-card-title ">$10</h1>
+                            <img src="img/CARRO.jpg" width="203" alt="chasisCarro">
+                            <h1 class="card-title pricing-card-title ">$25 </h1>
                             <ul class="list-unstyled mt-3 mb-4 ">
-                                <li class="titulo">NodeMcu ESP32</li>
-                                <li>Bluethooth/Wi-Fi</li>
-                                <li>Voltage de alimentacion: 3.3V 5V</li>
+                                <li class="titulo">Chasis de carro acrilico</li>
+                                <li>Incluye 4 motores reductores</li>
+                                <li>4 ruedas</li>
                             </ul>
-                            <a href="https://github.com/espressif/arduino-esp32" target="_blank" rel="Mas info ESP32">
-                                <button type="button " class="w-100 btn btn-lg btn-primary ">Mas Info</button> </a>
+
                         </div>
                     </div>
                 </div>
-                <!-- Fin de tercero -->
-                <!-- Inico Cuarto-->
+                <!-- Fin Carro-->
+                <!-- Inicio MATRIZ -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <img src="img/MATRIZ.png" width="150" alt="Matriz led">
+                            <h1 class="card-title pricing-card-title ">$10</h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li class="titulo">Modulo de matriz led</li>
+                                <li>MAX7219 </li>
+                                </li>En colores azul/verde </li>
+
+                            </ul>
+                            <a href="https://www.prometec.net/grupo-4-8x8-max7219/" target="_blank" rel="noopener noreferre">
+                                <button type="button " class="w-100 btn btn-lg btn-primary ">Más Info</button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin MATRIZ-->
+                <!-- Inico LCD16x2-->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
                         <div class="card-header py-3 text-white bg-primary border-primary ">
@@ -157,30 +247,49 @@
                         </div>
                     </div>
                 </div>
-                <!-- Fn Cuarto-->
-                <!-- Inicio Quinto -->
+                <!-- Fn LCD16x2-->
+                <!-- inicio OLED-->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
                         <div class="card-header py-3 text-white bg-primary border-primary ">
                         </div>
                         <div class="card-body ">
-                            <img src="img/MATRIZ.png" width="150" alt="Matriz led">
-                            <h1 class="card-title pricing-card-title ">$10</h1>
+                            <img src="img/OLED_4BLUE.png" width="150" alt="OLED">
+                            <h1 class="card-title pricing-card-title ">$5</small>
+                            </h1>
                             <ul class="list-unstyled mt-3 mb-4 ">
-                                <li class="titulo">Modulo de matriz led</li>
-                                <li>MAX7219 </li>
-                                </li>En colores azul/verde </li>
+                                <li class="titulo">OLED </li>
+                                <li> 0,96' 128X64</li>
+                                <li> I2C </li>
+                                <li>SSD1306</li>
 
                             </ul>
-                            <a href="https://www.prometec.net/grupo-4-8x8-max7219/" target="_blank" rel="noopener noreferre">
-                                <button type="button " class="w-100 btn btn-lg btn-primary ">Manual de ensamble</button>
-
-                            </a>
+                            <a href="https://github.com/adafruit/Adafruit_SSD1306" target="_blank" rel="noopener noreferrer"></a>
+                            <button type="button " class="w-100 btn btn-lg btn-primary ">Mas Info</button>
                         </div>
                     </div>
                 </div>
-                <!-- Fin Quinto -->
-                <!-- Inicio Sexto -->
+                <!-- Fin OLED-->
+                <!-- Inicio ESP32 -->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <img src="img/ESP32.png" width="240" alt="ESP32">
+                            <h1 class="card-title pricing-card-title ">$10</h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li class="titulo">NodeMcu ESP32</li>
+                                <li>Bluethooth/Wi-Fi</li>
+                                <li>Voltage de alimentacion: 3.3V a 5V</li>
+                            </ul>
+                            <a href="https://github.com/espressif/arduino-esp32" target="_blank" rel="Mas info ESP32">
+                                <button type="button " class="w-100 btn btn-lg btn-primary ">Mas Info</button> </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin ESP32 -->
+                <!-- Inicio RFID-->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
                         <div class="card-header py-3 text-white bg-primary border-primary ">
@@ -197,8 +306,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Fin Sexto -->
-                <!-- Inicio Septimo -->
+                <!-- Fin RFID-->
+                <!-- Inicio GSM-->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
                         <div class="card-header py-3 text-white bg-primary border-primary ">
@@ -215,8 +324,64 @@
                         </div>
                     </div>
                 </div>
-                <!-- Fin Septimo -->
-                <!-- Inicio Octavo -->
+                <!-- Fin GSM-->
+                <!-- Inicio TerminaBlock-->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <img src="img/terminal.png" width="147" alt="terminaBlock">
+                            <h1 class="card-title pricing-card-title ">$0.25<small class="text-muted fw-light ">c/u</small> </h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li class="titulo">Terminal Block</li>
+                                <li>De dos</li>
+                                <li> y tres pines</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin terminaBlock-->
+                <!-- Fin header macho-->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <img src="img/headerMacho.png" width="250" alt="headerMacho">
+                            <h1 class="card-title pricing-card-title ">$0.50<small class="text-muted fw-light ">c/u</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li class="titulo">Header Macho</li>
+                                <li>Blanco, Azul</li>
+                                <li>Amarillo, Rojo</li>
+                                <li>Nego y Verde</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin header macho-->
+                <!-- Fin header Hembra-->
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3 text-white bg-primary border-primary ">
+                        </div>
+                        <div class="card-body ">
+                            <img src="img/headerHembra.png" width="250" alt="headerHembra">
+                            <h1 class="card-title pricing-card-title ">$0.50<small class="text-muted fw-light ">c/u</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li class="titulo">Header Hembra</li>
+                                <li>Blanco, Azul</li>
+                                <li>Amarillo, Rojo</li>
+                                <li>Nego y Verde</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin header Hembra-->
+                <!-- Inicio CNC-->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
                         <div class="card-header py-3 text-white bg-primary border-primary ">
@@ -233,30 +398,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Fin Octavo -->
-                <!-- Inicio Noveno -->
-                <div class="col ">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
-                        <div class="card-header py-3 text-white bg-primary border-primary ">
-                        </div>
-                        <div class="card-body ">
-                            <img src="img/LED_SMD.png" width="200" alt="LED_SMD">
-                            <h1 class="card-title pricing-card-title ">$29<small class="text-muted fw-light ">c/u</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4 ">
-                                <li class="titulo">Led SMD 1206</li>
-                                <li>Rojo</li>
-                                <li> Azul</li>
-                                <li> Amarillo </li>
-                                <li>Blanco</li>
-                                <li>Verde </li>
-
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin Noveno -->
-                <!-- Inicio Decimo -->
+                <!-- Fin CNC-->
+                <!-- Inicio BobinaTesla-->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
                         <div class="card-header py-3 text-white bg-primary border-primary ">
@@ -274,66 +417,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Fin Decimo -->
-                <!-- inicio Decimo Primero -->
-                <div class="col ">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
-                        <div class="card-header py-3 text-white bg-primary border-primary ">
-                        </div>
-                        <div class="card-body ">
-                            <img src="img/OLED_4BLUE.png" width="150" alt="OLED">
-                            <h1 class="card-title pricing-card-title ">$5</small>
-                            </h1>
-                            <ul class="list-unstyled mt-3 mb-4 ">
-                                <li class="titulo">OLED </li>
-                                <li> 0,96' 128X64</li>
-                                <li> I2C SSD1306</li>
-
-                            </ul>
-                            <a href="https://github.com/adafruit/Adafruit_SSD1306" target="_blank" rel="noopener noreferrer"></a>
-                            <button type="button " class="w-100 btn btn-lg btn-primary ">Mas Info</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin Decimo Primero -->
-                <!-- Inicio Decimo Segundo -->
-                <div class="col ">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
-                        <div class="card-header py-3 text-white bg-primary border-primary ">
-                        </div>
-                        <div class="card-body ">
-                            <img src="img/terminal.png" width="147" alt="terminaBlock">
-                            <h1 class="card-title pricing-card-title ">$0.25<small class="text-muted fw-light ">c/u</small> </h1>
-                            <ul class="list-unstyled mt-3 mb-4 ">
-                                <li class="titulo">Terminal Block</li>
-                                <li>De dos</li>
-                                <li> y tres pines</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin Decimo Segundo -->
-                <!-- Inicio RTC -->
-                <div class="col ">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
-                        <div class="card-header py-3 text-white bg-primary border-primary ">
-                        </div>
-                        <div class="card-body ">
-                            <img src="img/RTC_DS1307.png" width="210" alt="RTC">
-                            <h1 class="card-title pricing-card-title ">$3 </h1>
-                            <ul class="list-unstyled mt-3 mb-4 ">
-                                <li class="titulo">Módulo RTC I2C DS1307</li>
-                                <li>Reloj en tiempo Real</li>
-                                <li> AT24C32</li>
-
-                            </ul>
-                            <a href=" https://github.com/Seeed-Studio/RTC_DS1307" target="_blank" rel="noopener noreferrer">
-                                <button type="button " class="w-100 btn btn-lg btn-primary ">Mas info</button></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin RTC -->
+                <!-- Fin BobinaTesla-->
                 <!-- Inicio Capacitores ceramicos-->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
@@ -352,24 +436,6 @@
                     </div>
                 </div>
                 <!-- Fin Capacitores ceramicos-->
-                <!-- Inicio Carro-->
-                <div class="col ">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
-                        <div class="card-header py-3 text-white bg-primary border-primary ">
-                        </div>
-                        <div class="card-body ">
-                            <img src="img/CARRO.jpg" width="195" alt="chasisCarro">
-                            <h1 class="card-title pricing-card-title ">$25 </h1>
-                            <ul class="list-unstyled mt-3 mb-4 ">
-                                <li class="titulo">Chasis de carro acrilico</li>
-                                <li>Incluye 4 motores reductores</li>
-                                <li>4 ruedas</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin Carro-->
                 <!-- Inicio Capacitores Electroliticos 16V-->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
@@ -429,44 +495,26 @@
                     </div>
                 </div>
                 <!-- Fin Capacitores Electroliticos 50v-->
-                <!-- Fin header macho-->
+                <!-- Inicio RTC -->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
                         <div class="card-header py-3 text-white bg-primary border-primary ">
                         </div>
                         <div class="card-body ">
-                            <img src="img/headerMacho.png" width="200" alt="headerMacho">
-                            <h1 class="card-title pricing-card-title ">$0.50<small class="text-muted fw-light ">c/u</small></h1>
+                            <img src="img/RTC_DS1307.png" width="210" alt="RTC">
+                            <h1 class="card-title pricing-card-title ">$3 </h1>
                             <ul class="list-unstyled mt-3 mb-4 ">
-                                <li class="titulo">Header Macho</li>
-                                <li>Blanco, Azul</li>
-                                <li>Amarillo, Rojo</li>
-                                <li>Nego y Verde</li>
-                            </ul>
+                                <li class="titulo">Módulo RTC I2C DS1307</li>
+                                <li>Reloj en tiempo Real</li>
+                                <li> AT24C32</li>
 
+                            </ul>
+                            <a href=" https://github.com/Seeed-Studio/RTC_DS1307" target="_blank" rel="noopener noreferrer">
+                                <button type="button " class="w-100 btn btn-lg btn-primary ">Mas info</button></a>
                         </div>
                     </div>
                 </div>
-                <!-- Fin header macho-->
-                <!-- Fin header Hembra-->
-                <div class="col ">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
-                        <div class="card-header py-3 text-white bg-primary border-primary ">
-                        </div>
-                        <div class="card-body ">
-                            <img src="img/headerHembra.png" width="200" alt="headerHembra">
-                            <h1 class="card-title pricing-card-title ">$0.50<small class="text-muted fw-light ">c/u</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4 ">
-                                <li class="titulo">Header Hembra</li>
-                                <li>Blanco, Azul</li>
-                                <li>Amarillo, Rojo</li>
-                                <li>Nego y Verde</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin header Hembra-->
+                <!-- Fin RTC -->
                 <!-- Fin LDR-->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
@@ -486,44 +534,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Fin LDR-->
-                <!-- Inicio LED ultrabrillo -->
-                <div class="col ">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
-                        <div class="card-header py-3 text-white bg-primary border-primary ">
-                        </div>
-                        <div class="card-body ">
-                            <img src="img/LEDutrabrillo.png" width="235" alt="LED ultrabrillo Azul, Amarillo, Verde, Rojo, Blanco">
-                            <h1 class="card-title pricing-card-title ">$0.20<small class="text-muted fw-light ">c/u</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4 ">
-                                <li class="titulo">LED ultrabrillo</li>
-                                <li>5mm</li>
-                                <li>Azul, Amarillo</li>
-                                <li>Verde, Rojo, Blanco</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin Led UtraBrillo-->
-                <!-- Inicio LED ultrabrillo -->
-                <div class="col ">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary ">
-                        <div class="card-header py-3 text-white bg-primary border-primary ">
-                        </div>
-                        <div class="card-body ">
-                            <img src="img/RGB.png" width="215" alt="LED RGB">
-                            <h1 class="card-title pricing-card-title ">$0.50<small class="text-muted fw-light ">c/u</small></h1>
-                            <ul class="list-unstyled mt-3 mb-4 ">
-                                <li class="titulo">LED ultrabrillo RGB</li>
-                                <li>5mm</li>
-                                <li>Catodo comun</li>
-                                <li>Azul, Verde, Rojo,</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin Led UtraBrillo-->
-                <!-- Inicio  -->
+                <!-- Inicio Opto-->
                 <div class="col ">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary ">
                         <div class="card-header py-3 text-white bg-primary border-primary ">
@@ -540,7 +551,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Fin -->
+                <!-- Fin Opto-->
             </div>
 
 
@@ -563,7 +574,7 @@
                 </div>
                 <div class="col-12 col-md ">
                     <a href="https://www.facebook.com/One-Line-Electronics-105200475138897" rel="noopener noreferrer">
-                        <img class="mb-2 " src="img/OneLine.png" width="100"></a>
+                        <img class="mb-2 " src="img/OneLineLogo.svg" width="32"></a>
                     <small class="d-block mb-3 text-muted "> Jhonatan Antony Salazar</small>
                 </div>
                 <hr>
