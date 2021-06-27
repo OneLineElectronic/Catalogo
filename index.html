@@ -60,10 +60,30 @@
             justify-content: center;
         }
         
+        .btn-primary {
+            color: #fff;
+            /* background-color: #24cc63; */
+            border-color: #ffffff;
+        }
+        
         .btn-secondary {
             color: #fff;
             background-color: #24cc63;
             border-color: #ffffff;
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
         }
     </style>
 
@@ -73,6 +93,18 @@
 </head>
 
 <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-bottom bg-primary ">
+        <div class="container-fluid ">
+
+            <a href="https://www.facebook.com/One-Line-Electronics-105200475138897" target="_blank" rel="noopener noreferrer">
+                <button type="button " class="w-100 btn btn-lg btn-primary ">Contactanos en Facebook</button></a>
+            <hr>
+            <a href="https://wa.me/50361308018" target="_blank" rel="noopener noreferrer">
+                <button type="button " class="w-100 btn btn-lg btn-secondary">Contactanos en WhatsApp</button></a>
+        </div>
+    </nav>
+
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="check" viewBox="0 0 16 16">
@@ -704,11 +736,7 @@
                 </div>
                 <!-- Fin Regulador LM317T-->
             </div>
-            <a href="https://www.facebook.com/One-Line-Electronics-105200475138897" target="_blank" rel="noopener noreferrer">
-                <button type="button " class="w-100 btn btn-lg btn-primary ">Contactanos en Facebook</button></a>
-            <hr>
-            <a href="https://wa.me/50361308018" target="_blank" rel="noopener noreferrer">
-                <button type="button " class="w-100 btn btn-lg btn-secondary">Contactanos en Whatsapp</button></a>
+
         </main>
 
         <footer class="pt-4 my-md-5 pt-md-5 border-top ">
